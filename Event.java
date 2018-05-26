@@ -5,11 +5,28 @@ package kh.rupp.mestudy.mystudy;
  */
 
 public class Event {
-    private String id;
+    private int id;
     private String tittle;
     private String description;
     private String location;
     private String date;
+    public Event() {
+    }
+
+    public Event(int id,String tittle,String description,String location,String date) {
+        this.id = id;
+        this.tittle=tittle;
+        this.description=description;
+        this.location=location;
+        this.date=date;
+    }
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getTittle() {
         return tittle;
@@ -27,14 +44,6 @@ public class Event {
         this.description = description;
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public String getLocation() {
         return location;
     }
@@ -50,6 +59,10 @@ public class Event {
     public void setDate(String date) {
         this.date = date;
     }
+
+
+
+
 
 
 
